@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Sendou Map Checklist
 // @namespace    https://github.com/DeltaJordan/sendou-checkboxes
-// @version      0.1
+// @version      0.2
 // @description  Adds checkboxes to the maplist on sendou.ink/maps
 // @author       DeltaJordan
 // @match        https://sendou.ink/maps*
