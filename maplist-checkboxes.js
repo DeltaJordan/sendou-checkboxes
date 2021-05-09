@@ -26,7 +26,9 @@ function action(o) {
     o.disconnect();
 
     // Gets the textarea that contains the map list, then retrieves the contents.
-    var mapListText = $('.css-125l1uo').first().text();
+    // As of the current version (May 09 2021) of sendou.ink,
+    // the only textarea present on sendou.ink/maps is the one we need.
+    var mapListText = $('textarea').val();
     // Splits the contents into an array containing each map mode combo.
     var mapListArray = mapListText.split('\n');
 
@@ -52,7 +54,9 @@ function action(o) {
         // Add the elements to an array.
         var elements = [ checkBoxHtml, labelHtml, breakHtml ];
 
-        // Adds all the elements after the "Save" button.
+        // Adds all the elements after the "Copy" button.
+        // I can't think of a clever way to retrieve this button that
+        // will persist through css class name changes.
         $('.css-1v59txb').after(elements);
     });
 
